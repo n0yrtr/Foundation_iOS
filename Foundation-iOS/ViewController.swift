@@ -20,6 +20,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    // Segue 準備
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "toLogin") {
+            let loginViewController: LoginViewController = (segue.destination as? LoginViewController)!
+            // ViewControllerのtextVC2にメッセージを設定
+            loginViewController.sendTextString = "ViewControllerからの遷移"
+        }
+    }
 
 
 }

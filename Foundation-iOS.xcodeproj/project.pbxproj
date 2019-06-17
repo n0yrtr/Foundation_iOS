@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BB008A8322B722FA00F9D779 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB008A8222B722F900F9D779 /* Alamofire.framework */; };
 		BB008A8422B722FA00F9D779 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB008A8222B722F900F9D779 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BB008A8822B7ADB300F9D779 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB008A8722B7ADB300F9D779 /* LoginViewController.swift */; };
 		BB6645D622B3AD250055CE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6645D522B3AD250055CE2C /* AppDelegate.swift */; };
 		BB6645D822B3AD250055CE2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6645D722B3AD250055CE2C /* ViewController.swift */; };
 		BB6645DB22B3AD250055CE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6645D922B3AD250055CE2C /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		BB008A8222B722F900F9D779 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		BB008A8722B7ADB300F9D779 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BB6645D222B3AD250055CE2C /* Foundation-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Foundation-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB6645D522B3AD250055CE2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB6645D722B3AD250055CE2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				BB6645DC22B3AD270055CE2C /* Assets.xcassets */,
 				BB6645DE22B3AD270055CE2C /* LaunchScreen.storyboard */,
 				BB6645E122B3AD270055CE2C /* Info.plist */,
+				BB008A8722B7ADB300F9D779 /* LoginViewController.swift */,
 			);
 			path = "Foundation-iOS";
 			sourceTree = "<group>";
@@ -302,7 +305,6 @@
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "/usr/local/bin/carthage copy-frameworks";
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -312,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB008A8822B7ADB300F9D779 /* LoginViewController.swift in Sources */,
 				BB6645D822B3AD250055CE2C /* ViewController.swift in Sources */,
 				BB66460722B3B3B30055CE2C /* Header.swift in Sources */,
 				BB6645D622B3AD250055CE2C /* AppDelegate.swift in Sources */,
