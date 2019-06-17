@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB008A8322B722FA00F9D779 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB008A8222B722F900F9D779 /* Alamofire.framework */; };
+		BB008A8422B722FA00F9D779 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB008A8222B722F900F9D779 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BB6645D622B3AD250055CE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6645D522B3AD250055CE2C /* AppDelegate.swift */; };
 		BB6645D822B3AD250055CE2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6645D722B3AD250055CE2C /* ViewController.swift */; };
 		BB6645DB22B3AD250055CE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6645D922B3AD250055CE2C /* Main.storyboard */; };
@@ -14,6 +16,8 @@
 		BB6645E022B3AD270055CE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6645DE22B3AD270055CE2C /* LaunchScreen.storyboard */; };
 		BB6645EB22B3AD270055CE2C /* Foundation_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6645EA22B3AD270055CE2C /* Foundation_iOSTests.swift */; };
 		BB6645F622B3AD270055CE2C /* Foundation_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6645F522B3AD270055CE2C /* Foundation_iOSUITests.swift */; };
+		BB66460722B3B3B30055CE2C /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB66460622B3B3B30055CE2C /* Header.swift */; };
+		BBA9F39F22B3C8CB009C8B9D /* Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBA9F39E22B3C8CB009C8B9D /* Header.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +37,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BB008A8522B722FA00F9D779 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BB008A8422B722FA00F9D779 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		BB008A8222B722F900F9D779 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		BB6645D222B3AD250055CE2C /* Foundation-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Foundation-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB6645D522B3AD250055CE2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB6645D722B3AD250055CE2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +66,8 @@
 		BB6645F122B3AD270055CE2C /* Foundation-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Foundation-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB6645F522B3AD270055CE2C /* Foundation_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foundation_iOSUITests.swift; sourceTree = "<group>"; };
 		BB6645F722B3AD270055CE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB66460622B3B3B30055CE2C /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		BBA9F39E22B3C8CB009C8B9D /* Header.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Header.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB008A8322B722FA00F9D779 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +99,7 @@
 		BB6645C922B3AD250055CE2C = {
 			isa = PBXGroup;
 			children = (
+				BB008A8222B722F900F9D779 /* Alamofire.framework */,
 				BB6645D422B3AD250055CE2C /* Foundation-iOS */,
 				BB6645E922B3AD270055CE2C /* Foundation-iOSTests */,
 				BB6645F422B3AD270055CE2C /* Foundation-iOSUITests */,
@@ -97,6 +120,7 @@
 		BB6645D422B3AD250055CE2C /* Foundation-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				BB66460322B3B2200055CE2C /* View */,
 				BB6645D522B3AD250055CE2C /* AppDelegate.swift */,
 				BB6645D722B3AD250055CE2C /* ViewController.swift */,
 				BB6645D922B3AD250055CE2C /* Main.storyboard */,
@@ -125,6 +149,15 @@
 			path = "Foundation-iOSUITests";
 			sourceTree = "<group>";
 		};
+		BB66460322B3B2200055CE2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB66460622B3B3B30055CE2C /* Header.swift */,
+				BBA9F39E22B3C8CB009C8B9D /* Header.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +168,8 @@
 				BB6645CE22B3AD250055CE2C /* Sources */,
 				BB6645CF22B3AD250055CE2C /* Frameworks */,
 				BB6645D022B3AD250055CE2C /* Resources */,
+				BB008A8522B722FA00F9D779 /* Embed Frameworks */,
+				BB008A8622B7233D00F9D779 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -229,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBA9F39F22B3C8CB009C8B9D /* Header.xib in Resources */,
 				BB6645E022B3AD270055CE2C /* LaunchScreen.storyboard in Resources */,
 				BB6645DD22B3AD270055CE2C /* Assets.xcassets in Resources */,
 				BB6645DB22B3AD250055CE2C /* Main.storyboard in Resources */,
@@ -251,12 +287,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BB008A8622B7233D00F9D779 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BB6645CE22B3AD250055CE2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BB6645D822B3AD250055CE2C /* ViewController.swift in Sources */,
+				BB66460722B3B3B30055CE2C /* Header.swift in Sources */,
 				BB6645D622B3AD250055CE2C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +488,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Foundation-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +509,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Foundation-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
